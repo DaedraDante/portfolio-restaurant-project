@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #641b1b;
+  --secondary-color: #4caf50;
+  --background-color: #f0f0f0; 
+  --text-color: #ececec; 
+}
+body {
+  background-color: var(--background-color);
+}
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: var(--text-color); 
+}
+.hero-section {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
