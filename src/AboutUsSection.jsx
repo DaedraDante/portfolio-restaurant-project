@@ -1,17 +1,17 @@
 
 function AboutUsSection() {
   return (
-    <div className="about-us-section container">
-      <h1>This is the about us section</h1>
-      <p>With over 32 restaurants across europe and asia
-        we mentain a good reputation for our quality and service.
-        We are the best in the business and we are proud of it.
-      </p>
-      <p>we want to make sure that you have the best experience possible.
-        We are always looking for ways to improve our service and quality.
-        If you have any suggestions or feedback, please let us know.
-      </p>
-    </div>
+<section className="about-us-section container">
+<h2>Meet Our Chef</h2>
+    <p>
+      Chef Haruki Takahashi brings over 20 years of culinary experience to our kitchen.
+      Trained in the heart of Tokyo and inspired by the changing seasons, his approach blends tradition with innovation. 
+      Every plate tells a story—crafted with precision, respect, and passion for the art of Japanese cuisine.
+    </p>
+  <div className="chef-image">
+    <img src="https://www.caterermiddleeast.com/cloud/2023/02/09/NewChefsatMatagi-Matagi-scaled-1.jpg" alt="Chef Haruki Takahashi preparing sushi" />
+  </div>
+</section>
   );
 }
 
