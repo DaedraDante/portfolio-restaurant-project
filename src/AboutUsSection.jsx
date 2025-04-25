@@ -2,15 +2,16 @@
 function AboutUsSection() {
   return (
 <section className="about-us-section container">
-<h2>Meet Our Chef</h2>
+  <h2>About Us</h2>
+    <div className="divider" />
+    <span className="proverb">一期一会</span>
+    <p className="proverb-translation">“Once in a lifetime encounter”</p>
     <p>
-      Chef Haruki Takahashi brings over 20 years of culinary experience to our kitchen.
-      Trained in the heart of Tokyo and inspired by the changing seasons, his approach blends tradition with innovation. 
-      Every plate tells a story—crafted with precision, respect, and passion for the art of Japanese cuisine.
+      Nestled in the heart of the city, our restaurant is a haven for lovers of authentic Japanese cuisine. 
+      We honor time-honored techniques and seasonal ingredients, offering a dining experience that’s both elegant and soulful.
+      Every detail, from the ambiance to the dishes, reflects our deep respect for Japanese culture and culinary tradition.
     </p>
-  <div className="chef-image">
-    <img src="https://www.caterermiddleeast.com/cloud/2023/02/09/NewChefsatMatagi-Matagi-scaled-1.jpg" alt="Chef Haruki Takahashi preparing sushi" />
-  </div>
+    
 </section>
   );
 }
