@@ -3,7 +3,9 @@ function AboutUsSection() {
   return (
 <section className="about-us-section container">
   <h2>About Us</h2>
-    <div className="divider"></div>
+    <div className="divider">
+      <img src="https://www.onlygfx.com/wp-content/uploads/2019/03/14-white-grunge-brush-stroke-13.png" alt="" />
+    </div>
     <div className="proverb-wrapper">
        <span className="proverb"> 期 会</span>
        <p className="proverb-translation">“Once in a lifetime encounter”</p>

@@ -2,7 +2,18 @@
 function MenuSection() {
   return(
         <div className="menu-section container">
-            <ul>
+          <aside className="menu-aside">
+          <h3>🍣 Sushi & Sashimi</h3>
+          <h3>🍜 Noodles</h3>
+          <h3>🍚 Rice Dishes</h3>
+          <h3>🍢 Street Food & Snacks</h3>
+          <h3>🍱 Bento Boxes</h3>
+          <h3>🍤 Tempura & Fried Foods</h3>
+          <h3>🥢 Side Dishes & Starters</h3>
+          <h3>🍡 Desserts & Sweets</h3>
+          <h3>🍶 Beverages</h3>
+          </aside>
+            <ul className="menu-list">
               <li>
                 <h3>🍣 Sushi & Sashimi</h3>
                 <ul>
