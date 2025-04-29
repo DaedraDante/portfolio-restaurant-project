@@ -27,7 +27,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: var(--primary-color);
   color: var(--text-color); 
@@ -219,11 +219,12 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--text-color);
+  transition: all 0.7s ease;
 }
-.menu-section h3:hover {
+.menu-section .menu-aside h3:hover {
   color: var(--accent-color);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
+  transform: scale(1.05);
+  transition: all 0.45s ease;
 }
 .menu-section li {
   font-family: "Noto Sans", sans-serif;
@@ -231,13 +232,36 @@ body {
   line-height: 1.7;
   margin-bottom: 0.5rem;
 }
-.menu-aside {
+.menu-section .menu-aside {
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
   color: var(--text-color);
   padding-left: 2rem;
   padding-top: 2rem;
+  position: sticky;
+}
+.menu-section .menu-list {
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.menu-section .menu-list::-webkit-scrollbar {
+  width: 8px;
+}
+.menu-section .menu-list::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+.menu-section .menu-aside a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.menu-section .menu-aside a:hover {
+  color: var(--accent-color);
+  transform: scale(1.05);
+  transition: all 0.45s ease;
 }
 
 @keyframes fadeIn {
