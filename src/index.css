@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #641b1b;
-  --secondary-color: #ddd8d8;
+  --primary-color: rgb(100, 27, 27);
+  --secondary-color: lab(86.72% 1.71 0.6);
   --accent-color: rgb(214, 204, 55);
   --background-color: #000000; 
   --text-color: #ececec; 
+  scroll-behavior: smooth;
 }
 
 body {
@@ -180,29 +181,24 @@ body {
   background-color: #ddd8d8;
   color: #222;
 }
-
 .chef-text {
   flex: 1 1 45%;
   padding-right: 2rem;
 }
-
 .chef-text h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
 .chef-text p {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
 }
-
 .chef-image {
   flex: 1 1 45%;
   text-align: center;
 }
-
 .chef-image img {
   width: 100%;
   max-width: 400px;
@@ -210,20 +206,39 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+
 .menu-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  --s: 87px; /* control the size*/
+  --c1: #641b1b;
+  --c2: #520606;
+  
+  --_g: 
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+  background:
+    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+    var(--c1);
+  background-size: var(--s) var(--s);
 }
+
 .menu-section h3 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--text-color);
   transition: all 0.7s ease;
+  font-size: 2rem;
+}
+.menu-section .menu-aside h3 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
 .menu-section .menu-aside h3:hover {
   color: var(--accent-color);
-  transform: scale(1.05);
+  transform: scale(1.15);
   transition: all 0.45s ease;
 }
 .menu-section li {
@@ -231,14 +246,16 @@ body {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 0.5rem;
+  list-style: none;
 }
 .menu-section .menu-aside {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: var(--primary-color);
   color: var(--text-color);
   padding-left: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   position: sticky;
 }
 .menu-section .menu-list {
@@ -246,6 +263,14 @@ body {
   height: 100dvh;
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+.menu-section .menu-list ul {
+    list-style: none;      /* removes bullet points */
+    padding-left: 0;       /* removes left indentation */
+    margin: 0;             /* optional: resets margin too */
+}
+.menu-section .menu-list h3 {
+  color: var(--accent-color);
 }
 .menu-section .menu-list::-webkit-scrollbar {
   width: 8px;
@@ -263,6 +288,14 @@ body {
   transform: scale(1.05);
   transition: all 0.45s ease;
 }
+.menu-itself {
+  min-width:320px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+
+
 
 @keyframes fadeIn {
   to {
@@ -281,8 +314,15 @@ body {
     width: 100%;
     font-size: 1.2rem;
   }
+  .menu-image {
+    display: none;
+  }
 }
-
+@media (min-width: 480px) and (max-width: 768px) {
+  .menu-image {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   body {
     font-size: 17px;

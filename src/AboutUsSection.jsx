@@ -4,7 +4,7 @@ function AboutUsSection() {
 <section className="about-us-section container">
   <h2>About Us</h2>
     <div className="divider">
-      <img src="https://www.onlygfx.com/wp-content/uploads/2019/03/14-white-grunge-brush-stroke-13.png" alt="" />
+      <img src="https://www.onlygfx.com/wp-content/uploads/2019/03/14-white-grunge-brush-stroke-13.png" alt="sushi-img" className="menu-image"/>
     </div>
     <div className="proverb-wrapper">
        <span className="proverb"> 期 会</span>

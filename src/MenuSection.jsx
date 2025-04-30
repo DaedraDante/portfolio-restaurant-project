@@ -1,21 +1,22 @@
 
 function MenuSection() {
   return(
-    <div className="menu-section container">
+    <div className="menu-section container" id="menu-section">
+      <div className="menu-itself">
       <aside className="menu-aside">
-      <h3><a href="#Sushi-foods">🍣 Sushi & Sashimi</a></h3>
-      <h3><a href="#Noodles-foods">🍜 Noodles</a></h3>
-      <h3><a href="#Rice-foods">🍚 Rice Dishes</a></h3>
-      <h3><a href="#Street-foods">🍢 Street Food & Snacks</a></h3>
-      <h3><a href="#Bento-foods">🍱 Bento Boxes</a></h3>
-      <h3><a href="#Tempura-foods">🍤 Tempura & Fried Foods</a></h3>
-      <h3><a href="#Side-foods">🥢 Side Dishes & Starters</a></h3>
-      <h3><a href="#Desserts-foods">🍡 Desserts & Sweets</a></h3>
-      <h3><a href="#Beverages">🍶 Beverages</a></h3>
+      <h3><a href="#Sushi-foods"> Sushi & Sashimi</a></h3>
+      <h3><a href="#Noodles-foods"> Noodles</a></h3>
+      <h3><a href="#Rice-foods"> Rice Dishes</a></h3>
+      <h3><a href="#Street-foods"> Street Food & Snacks</a></h3>
+      <h3><a href="#Bento-foods"> Bento Boxes</a></h3>
+      <h3><a href="#Tempura-foods"> Tempura & Fried Foods</a></h3>
+      <h3><a href="#Side-foods"> Side Dishes & Starters</a></h3>
+      <h3><a href="#Desserts-foods"> Desserts & Sweets</a></h3>
+      <h3><a href="#Beverages"> Beverages</a></h3>
       </aside>
         <ul className="menu-list">  
           <li>
-      <h3 id="Sushi-foods">🍣 Sushi & Sashimi</h3> <ul>
+      <h3 id="Sushi-foods"> Sushi & Sashimi</h3> <ul>
         <li>Nigiri (fish over rice)</li>
         <li>Maki (rolled sushi)</li>
         <li>Temaki (hand rolls)</li>
@@ -24,7 +25,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Noodles-foods">🍜 Noodles</h3>
+      <h3 id="Noodles-foods"> Noodles</h3>
       <ul>
         <li>Ramen (broth noodles with toppings)</li>
         <li>Udon (thick wheat noodles)</li>
@@ -34,7 +35,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Rice-foods">🍚 Rice Dishes</h3>
+      <h3 id="Rice-foods"> Rice Dishes</h3>
       <ul>
         <li>Donburi (rice bowls, e.g., Gyudon, Katsudon)</li>
         <li>Omurice (omelet-wrapped rice)</li>
@@ -43,7 +44,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Street-foods">🍢 Street Food & Snacks</h3>
+      <h3 id="Street-foods"> Street Food & Snacks</h3>
       <ul>
         <li>Takoyaki (octopus balls)</li>
         <li>Okonomiyaki (savory pancake)</li>
@@ -53,7 +54,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Bento-foods">🍱 Bento Boxes</h3>
+      <h3 id="Bento-foods"> Bento Boxes</h3>
       <ul>
         <li>Classic Bento (rice, protein, pickles)</li>
         <li>Karaage Bento (fried chicken)</li>
@@ -63,7 +64,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Tempura-foods">🍤 Tempura & Fried Foods</h3>
+      <h3 id="Tempura-foods"> Tempura & Fried Foods</h3>
       <ul>
         <li>Ebi Tempura (shrimp tempura)</li>
         <li>Vegetable Tempura</li>
@@ -72,7 +73,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Side-foods">🥢 Side Dishes & Starters</h3>
+      <h3 id="Side-foods"> Side Dishes & Starters</h3>
       <ul>
         <li>Edamame (salted soybeans)</li>
         <li>Miso Soup</li>
@@ -82,7 +83,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Desserts-foods">🍡 Desserts & Sweets</h3>
+      <h3 id="Desserts-foods"> Desserts & Sweets</h3>
       <ul>
         <li>Mochi (rice cake)</li>
         <li>Dorayaki (red bean pancake)</li>
@@ -92,7 +93,7 @@ function MenuSection() {
       </ul>
           </li>
           <li>
-      <h3 id="Beverages">🍶 Beverages</h3>
+      <h3 id="Beverages"> Beverages</h3>
       <ul>
         <li>Green Tea (hot/cold)</li>
         <li>Sake (rice wine)</li>
@@ -102,6 +103,9 @@ function MenuSection() {
       </ul>
           </li>
         </ul>
+      </div>
+      <img src="https://png.pngtree.com/png-vector/20220820/ourmid/pngtree-sakura-flower-icon-logo-vector-vector-japanese-logo-vector-png-image_38401164.png" alt="sushi-image" className="menu-image"/>
+
     </div>
     );
 }
