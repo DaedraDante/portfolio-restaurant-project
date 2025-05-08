@@ -3,7 +3,7 @@ import HeroSection from './HeroSection'
 import AboutUsSection from './AboutUsSection'
 import MenuSection from './MenuSection'
 import OurChefSection from './OurChefSection'
-
+import NavSection from './NavSection'
 
 function App() {
   
@@ -30,6 +30,7 @@ function App() {
   });
   return (
     <>
+      <NavSection/>
       <HeroSection/>
       <AboutUsSection/>
       <OurChefSection/>
