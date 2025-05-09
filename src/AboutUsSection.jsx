@@ -1,7 +1,8 @@
 
 function AboutUsSection() {
   return (
-<section className="about-us-section container">
+<section className="about-us-section container" id="about-us-section">
+
   <h2>About Us</h2>
     <div className="divider">
       <img src="https://www.onlygfx.com/wp-content/uploads/2019/03/14-white-grunge-brush-stroke-13.png" alt="sushi-img" className="menu-image"/>

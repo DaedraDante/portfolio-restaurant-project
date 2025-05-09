@@ -4,6 +4,7 @@ import AboutUsSection from './AboutUsSection'
 import MenuSection from './MenuSection'
 import OurChefSection from './OurChefSection'
 import NavSection from './NavSection'
+import ContactSection from './ContactSection'
 
 function App() {
   
@@ -35,6 +36,7 @@ function App() {
       <AboutUsSection/>
       <OurChefSection/>
       <MenuSection/>
+      <ContactSection/>
     </>
   )
 }

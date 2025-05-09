@@ -1,6 +1,6 @@
 function ContactSection() {
   return (
-    <section id="contact" className="contact-section">
+    <section className="contact-section" id="contact-section">
       <h2 className="contact-title">Contact Us</h2>
       <form className="contact-form">
         <input type="text" placeholder="Your Name" required />
