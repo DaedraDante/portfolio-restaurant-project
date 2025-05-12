@@ -5,6 +5,7 @@ import MenuSection from './MenuSection'
 import OurChefSection from './OurChefSection'
 import NavSection from './NavSection'
 import ContactSection from './ContactSection'
+import DetailsSection from './DetailsSection'
 
 function App() {
   
@@ -32,7 +33,8 @@ function App() {
   return (
     <>
       <NavSection/>
-      <HeroSection/>
+      <HeroSection></HeroSection>
+      <DetailsSection></DetailsSection>
       <AboutUsSection/>
       <OurChefSection/>
       <MenuSection/>

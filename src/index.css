@@ -101,7 +101,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  background: rgba(0, 0, 0, 0.6); /* Adjust transparency */
   z-index: 0;
 }
 .hero-section > * {
@@ -119,6 +119,27 @@ body {
 .hero-section .title {
   font-size: 4rem;
   margin-bottom: 12rem;
+}
+.details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: "Cormorant Garamond", serif;
+
+}
+.details-list {
+  list-style: none;
+  font-size: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0rem;
 }
 .hero-section h2 {
   font-size: 2rem;
@@ -477,6 +498,17 @@ body {
   }
   .chef-text {
     margin-bottom: 2rem;
+  }
+  .details-section {
+    font-size: 0.6rem;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+  }
+  .details-list {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 425px) {
